@@ -1,0 +1,56 @@
+.fa-solid {
+  margin-left: -20px;
+}
+.pandas,
+img {
+  margin-top: 15px;
+  width: 400px;
+  box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.37);
+}
+#comment {
+  width: 40%;
+  height: 80px;
+}
+div {
+  margin-top: 10px;
+}
+#search::placeholder {
+  text-align: center;
+}
+input {
+  padding: 0.3rem;
+  outline: none;
+  border-style: none;
+  border: 1px solid rgba(0, 0, 0, 0.97);
+}
+input:hover {
+  box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.37);
+  outline: none;
+  border-style: none;
+  border: 1px solid rgba(0, 0, 0, 0.37);
+}
+input:focus {
+  border: 1px solid rgba(0, 0, 0, 0.37);
+}
+
+button {
+  padding: 0.4rem;
+  background-color: tomato;
+  border: none;
+  border-radius: 0.2rem;
+}
+button:hover {
+  color: white;
+  background-color: red;
+}
+textarea {
+  outline: none;
+  border-style: none;
+  border: 1px solid rgba(0, 0, 0, 0.97);
+}
+textarea:hover {
+  box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.37);
+  outline: none;
+  border-style: none;
+  border: 1px solid rgba(0, 0, 0, 0.37);
+}
