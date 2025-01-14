@@ -1,0 +1,33 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+nav a {
+  text-decoration: none;
+  margin-left: 10px;
+  color: black;
+}
+.login-form-container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+  justify-content: center;
+}
+input[type="submit"] {
+  background-color: tomato;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+input[type="email"], [type="password"] {
+  outline: none;
+}
+input[type="email"], [type="password"],[type="submit"]:focus {
+  border: 1px dashed black;
+}
