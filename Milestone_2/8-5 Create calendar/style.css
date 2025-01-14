@@ -1,0 +1,28 @@
+.date-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 1rem;
+  /* row-gap: 50px;
+  column-gap: 50px; */
+}
+.date,
+.day {
+  background-color: gray;
+  /* height: 50px; */
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+  border-radius: 8px;
+  font-size: 20px;
+}
+.day {
+  background-color: aliceblue;
+  font-size: 16px;
+}
+.date:hover {
+  background-color: whitesmoke;
+  box-shadow: 2px 4px gainsboro, -2px -4px gainsboro;
+  transition: all ease-out 0.2s;
+}
