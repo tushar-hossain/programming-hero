@@ -1,0 +1,48 @@
+.container {
+  padding: 1rem;
+  background-color: beige;
+}
+.first-card {
+  display: flex;
+  background-color: white;
+  border: 1px solid #dfdedea6;
+  margin: 0.5rem;
+  border-radius: 8px;
+}
+.card-image {
+  width: 20%;
+}
+.card-image img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  padding: 0.2rem;
+}
+.card-body {
+  width: 80%;
+  padding: 20px;
+  text-align: justify;
+}
+
+button {
+  background-color: dodgerblue;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+  .first-card {
+    flex-direction: column;
+  }
+  .card-image {
+    width: 100%;
+  }
+  .card-image img {
+    width: 98%;
+    height: 300px;
+    object-fit: cover;
+  }
+}

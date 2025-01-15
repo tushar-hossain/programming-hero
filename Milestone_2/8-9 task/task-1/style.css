@@ -1,0 +1,37 @@
+.container {
+  border: 1px solid black;
+  display: flex;
+  gap: 1rem;
+  padding: 15px;
+  border-radius: 8px;
+  position: relative;
+}
+.left {
+  width: 20%;
+  background-color: bisque;
+  padding: 15px;
+  height: 400px;
+  border-radius: 8px;
+}
+.right {
+  width: 80%;
+  background-color: antiquewhite;
+  padding: 15px;
+  border-radius: 8px;
+  height: 400px;
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    flex-wrap: wrap;
+    position: relative;
+    padding: 15px;
+  }
+  .left {
+    height: 100px;
+    width: 98%;
+  }
+  .right {
+    width: 98%;
+  }
+}

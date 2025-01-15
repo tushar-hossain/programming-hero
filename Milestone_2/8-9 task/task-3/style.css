@@ -1,0 +1,15 @@
+.image img {
+  width: 100%;
+  object-fit: cover;
+}
+.image img {
+  object-fit: contain;
+}
+@media screen and (max-width: 576px) {
+  .image {
+    border: 1px solid black;
+  }
+  .image img {
+    object-fit: contain;
+  }
+}
