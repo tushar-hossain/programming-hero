@@ -1,0 +1,45 @@
+.container {
+  background-color: aqua;
+  width: 700px;
+  height: 400px;
+  position: relative;
+}
+.ball {
+  position: absolute;
+  background-color: yellow;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: red;
+  animation-name: balls;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: inherit;
+  transition: all ease-in-out 3s ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes balls {
+  0% {
+    top: 0px;
+    left: 0px;
+  }
+  25% {
+    top: 350px;
+    left: 50px;
+  }
+  50% {
+    top: 0px;
+    left: 150px;
+  }
+  75% {
+    top: 350px;
+    left: 350px;
+  }
+  100% {
+    top: 0px;
+    left: 650px;
+  }
+}
