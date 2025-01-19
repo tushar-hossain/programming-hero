@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+/* shared styles */
+.display-flex {
+  display: flex;
+}
+.primary-color {
+  color: #3a3a3a;
+}
+.color-secondary {
+  color: #787885;
+}
+.btn-primary {
+  background-color: #e02c6d;
+}
+.icon-color {
+  color: rgb(251, 130, 0);
+  margin: 1rem 0;
+}
+.see-more {
+  color: #e02c6d;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: end;
+  margin-top: 30px;
+}
+
+/* nav styles */
+.header {
+  align-items: center;
+  justify-content: space-between;
+  margin: 87px 120px;
+}
+.brand-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.nav-links {
+  list-style: none;
+  gap: 2rem;
+}
+.nav-link {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+}
+/* banner styles */
+.journey-container {
+  margin: 87px 120px;
+  justify-content: space-between;
+}
+.journey {
+  max-width: 582px;
+}
+.journey-title {
+  font-size: 3.25rem;
+  font-weight: bold;
+}
+.journey-description {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+.journey-btn {
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 41px;
+  padding: 10px 40px;
+  cursor: pointer;
+}
+.banner-container {
+  max-width: 475px;
+  max-height: 475px;
+  background-image: url("../images/Circle\ design.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner-image {
+  max-width: 440px;
+  max-height: 414px;
+}
+/* .banner-image img {
+  width: 100%;
+  object-fit: cover;
+} */
+/* sponsors styles */
+.sponsors-container {
+  max-width: 1110px;
+  margin: 0px auto;
+}
+.sponsors {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 3rem;
+  border-top: 1px solid rgba(192, 204, 218, 0.313);
+  border-bottom: 1px solid rgba(192, 204, 218, 0.313);
+  padding: 2rem 3.75rem;
+  text-align: center;
+}
+/* products styles */
+.products-container {
+  max-width: 1047px;
+  margin: 50px auto;
+}
+.collection-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.product-item {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.8rem;
+}
+.products {
+  width: 329px;
+  height: 480px;
+  border-radius: 5px;
+  padding: 17px;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+.product-title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin: 1rem 0;
+}
+.product-price {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.product-rating {
+  font-size: 20px;
+  font-weight: 700;
+  color: #5e6366;
+}
+
+/* feature styles */
+.feature-container {
+  max-width: 1110px;
+  margin: 100px auto;
+}
+.feature-products {
+  align-items: center;
+  gap: 50px;
+}
+.feature-title {
+  font-size: 2.3rem;
+  font-weight: bold;
+  color: #0a0826;
+}
+.feature-description {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #6c6c6c;
+  margin: 0.8rem 0rem;
+}
+.feature-btn {
+  color: white;
+  padding: 10px 24px;
+  border: none;
+}
+
+/* footer section */
+.footer-container {
+  text-align: center;
+  background-color: #0a0826;
+  color: white;
+  padding: 3rem;
+}
+.footer-title {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.copyright {
+  font-size: 12px;
+  font-weight: bold;
+  color: #d9dbe1;
+  margin: 5px 0px;
+}
+.social-media {
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Media query small device style */
+@media screen and (max-width: 576px) {
+  .header {
+    flex-direction: column;
+    margin: 0;
+    text-align: center;
+  }
+  .banner-container {
+    width: 257px;
+    height: 257;
+    margin: 0 auto;
+  }
+  .banner-image img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .journey-container,
+  .feature-products {
+    flex-direction: column-reverse;
+    margin: 1rem 0rem;
+    text-align: center;
+  }
+  .journey-title {
+    margin-top: 14px;
+    font-size: 2.25rem;
+  }
+  nav {
+    display: none;
+  }
+  .brand-title {
+    font-size: 2rem;
+  }
+  .nav-links {
+    gap: 1rem;
+  }
+  .journey-btn {
+    margin-bottom: 1rem;
+  }
+  .sponsors-container {
+    width: 100%;
+  }
+  .sponsors {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 5px;
+  }
+  .products {
+    margin: 0px auto;
+  }
+  .product-item {
+    grid-template-columns: 1fr;
+  }
+  .feature-products img {
+    width: 100%;
+    object-fit: cover;
+    padding: 10px;
+  }
+}
