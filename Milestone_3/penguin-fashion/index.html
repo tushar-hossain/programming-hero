@@ -30,15 +30,18 @@
   <body class="font-roboto">
     <!-- header section -->
     <header class="bg-[#FFFBF0] py-10 px-4 lg:px-36">
-      <!-- <img class="text-sm" src="./icons/logo.png" alt="" />
-      <nav>
-        <ul>
-          <li>Home</li>
-          <li>Product</li>
-          <li>About us</li>
-          <li>Contact us</li>
-        </ul>
-      </nav> -->
+      <div class="flex justify-between items-center">
+        <img class="w-60" src="./icons/logo.png" alt="" />
+        <span class="md:hidden"><i class="fa-solid fa-bars"></i></span>
+        <nav>
+          <ul class="hidden md:flex gap-8">
+            <li>Home</li>
+            <li>Product</li>
+            <li>About us</li>
+            <li>Contact us</li>
+          </ul>
+        </nav>
+      </div>
 
       <!-- banner section -->
       <div class="md:flex md:items-center md:justify-between">
@@ -192,8 +195,8 @@
                 <button
                   class="bg-gradient-to-r from-[#A4BC46] to-[#85A019] py-5 px-8 rounded-xl text-white"
                 >
-                  <span><i class="fa-solid fa-cart-shopping"></i></span
-                  ><span>BUY NOW</span>
+                  <span><i class="fa-solid fa-cart-shopping"></i></span>
+                  <span>BUY NOW</span>
                 </button>
               </div>
             </div>
@@ -219,8 +222,8 @@
                 <button
                   class="bg-gradient-to-r from-[#A4BC46] to-[#85A019] py-5 px-8 rounded-xl text-white"
                 >
-                  <span><i class="fa-solid fa-cart-shopping"></i></span
-                  ><span>BUY NOW</span>
+                  <span><i class="fa-solid fa-cart-shopping"></i></span>
+                  <span>BUY NOW</span>
                 </button>
               </div>
             </div>
@@ -246,8 +249,8 @@
                 <button
                   class="bg-gradient-to-r from-[#A4BC46] to-[#85A019] py-5 px-8 rounded-xl text-white"
                 >
-                  <span><i class="fa-solid fa-cart-shopping"></i></span
-                  ><span>BUY NOW</span>
+                  <span><i class="fa-solid fa-cart-shopping"></i></span>
+                  <span>BUY NOW</span>
                 </button>
               </div>
             </div>
@@ -258,7 +261,7 @@
       <!-- find product -->
       <section class="my-11">
         <div
-          class="space-y-4 flex flex-col-reverse md:grid grid-cols-2 md:gap-24 items-center"
+          class="space-y-4 flex flex-col-reverse md:grid grid-cols-1 lg:grid-cols-2 md:gap-24 items-center px-4"
         >
           <!-- card-1 -->
           <div class="space-y-10">
