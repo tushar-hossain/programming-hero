@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travello</title>
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome cdn -->
+    <script
+      src="https://kit.fontawesome.com/1e86394c92.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- custom tailwind cdn -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!-- header section -->
+    <header class="px-4 max-w-screen-xl mx-auto mb-4 lg:mb-20">
+      <div
+        class="grid grid-cols-1 lg:grid-cols-2 items-center gap-3 lg:px-5 lg:py-8]"
+      >
+        <!-- text -->
+        <div class="space-y-6">
+          <h1 class="text-2xl font-bold lg:text-6xl text-[#1C1C1C]">
+            From <br />
+            Southeast Asia <br />
+            <span class="text-[#F411CF]">to the World.</span>
+          </h1>
+          <p class="text-xl font-medium text-[#A8A8A8]">
+            Stay updated with travel tips, recommendations, and latest promos.
+          </p>
+          <div>
+            <button class="text-white rounded-full py-4 px-8 bg-[#872BFF]">
+              Get Started
+            </button>
+            <button
+              class="font-bold py-4 px-8 rounded-full border border-[#872BFF]"
+            >
+              Watch Demo
+              <span class="text-white py-2 px-3 rounded-full bg-[#872BFF]"
+                ><i class="fa-solid fa-play"></i
+              ></span>
+            </button>
+          </div>
+        </div>
+        <!-- image -->
+        <div class="">
+          <img src="./images/hero.png" alt="" />
+        </div>
+      </div>
+    </header>
+
+    <!-- main section -->
+    <main>
+      <section class="max-w-screen-xl mx-auto px-4">
+        <div class="text-center">
+          <p class="text-2xl font-bold tracking-widest text-[#F411CF]">
+            SERVICES
+          </p>
+          <h1 class="text-2xl lg:text-4xl font-bold mt-3">
+            Why book using Travelo
+          </h1>
+          <!-- card -->
+          <div
+            class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20"
+          >
+            <!-- 1st card -->
+            <div
+              class="text-center px-6 py-6 lg:px-12 lg:py-12 rounded-lg space-y-4 bg-gradient-to-t from-[#FEFFE4] to-[#C3F7FE]"
+            >
+              <div class="text-4xl text-[#872BFF]">
+                <i class="fa-solid fa-suitcase-rolling"></i>
+              </div>
+              <div class="space-y-4">
+                <h1 class="text-2xl lg:text-3xl font-semibold">
+                  All You Needs
+                </h1>
+                <p class="text-xl font-medium text-[#A8A8A8]">
+                  From flights, stays, to sights, just count on our complete
+                  products.
+                </p>
+              </div>
+            </div>
+            <!-- 2nd card -->
+            <div
+              class="text-center px-6 py-6 lg:px-12 lg:py-12 rounded-lg bg-gradient-to-t from-[#FFFFE4] to-[#E4FFD8]"
+            >
+              <div class="text-4xl text-[#872BFF] mb-4">
+                <i class="fa-solid fa-book"></i>
+              </div>
+              <div class="space-y-4">
+                <h1 class="text-2xl lg:text-3xl font-semibold">
+                  All You Needs
+                </h1>
+                <p class="text-xl font-medium text-[#A8A8A8]">
+                  From flights, stays, to sights, just count on our complete
+                  products.
+                </p>
+              </div>
+            </div>
+            <!-- 3rd card -->
+            <div
+              class="text-center px-6 py-6 lg:px-12 lg:py-12 rounded-lg bg-gradient-to-t from-[#FFFEE4] to-[#FFD6F3]"
+            >
+              <div class="text-4xl text-[#872BFF] mb-4">
+                <i class="fa-brands fa-cc-mastercard"></i>
+              </div>
+              <div class="space-y-4">
+                <h1 class="text-2xl lg:text-3xl font-semibold">
+                  All You Needs
+                </h1>
+                <p class="text-xl font-medium text-[#A8A8A8]">
+                  From flights, stays, to sights, just count on our complete
+                  products.
+                </p>
+              </div>
+            </div>
+            <!--  -->
+          </div>
+        </div>
+      </section>
+
+      <!-- asia -->
+      <section class="max-w-screen-xl mx-auto px-4 mt-20">
+        <div class="text-center">
+          <p class="text-2xl font-bold text-[#F411CF] tracking-widest mb-3">
+            BEST OF ASIA
+          </p>
+          <h1 class="text-xl lg:text-4xl font-bold">
+            Explore the top spots of Asia
+          </h1>
+        </div>
+
+        <!-- great wall -->
+        <div
+          class="mt-12 p-4 grid grid-cols-1 lg:grid-cols-2 bg-gradient-to-r from-[#EBDCFF] to-[#FFFEE4] lg:px-7 lg:py-7 rounded-lg"
+        >
+          <div class="flex justify-center">
+            <img src="./images/chaina-wall.png" alt="" />
+          </div>
+          <div class="space-y-5 text-center lg:text-left">
+            <h1 class="text-xl lg:text-3xl font-bold text-[#0E0E0ECC]">
+              Great Wall of China
+            </h1>
+            <div class="flex justify-center lg:justify-start">
+              <img src="./images/chaina.png" alt="" />
+            </div>
+            <p class="text-[#0E0E0EB3]">
+              Not until the creation and maintenance of decent conditions of
+              life for all people are recognized and accepted as a common
+              obligation of all people and all countries—not until then shall
+              we, with a certain degree of justification, be able to speak of
+              humankind as civilized
+            </p>
+            <button
+              class="font-bold text-white bg-[#872BFF] px-6 py-3 rounded-full"
+            >
+              Book Now
+            </button>
+          </div>
+        </div>
+        <!-- cox's bazar -->
+        <div
+          class="flex flex-col-reverse mt-12 p-4 lg:grid grid-cols-1 lg:grid-cols-2 bg-gradient-to-r from-[#FFFEE4] to-[#EBDCFF] lg:px-7 lg:py-7 rounded-lg"
+        >
+          <div class="space-y-5 text-center lg:text-left">
+            <h1 class="text-xl lg:text-3xl font-bold text-[#0E0E0ECC]">
+              Cox’s Bazar, World Longest Sea-beach
+            </h1>
+            <div class="flex justify-center lg:justify-start">
+              <img src="./images/bangladesh.png" alt="" />
+            </div>
+            <p class="text-[#0E0E0EB3]">
+              Not until the creation and maintenance of decent conditions of
+              life for all people are recognized and accepted as a common
+              obligation of all people and all countries—not until then shall
+              we, with a certain degree of justification, be able to speak of
+              humankind as civilized
+            </p>
+            <button
+              class="font-bold text-white bg-[#872BFF] px-6 py-3 rounded-full"
+            >
+              Book Now
+            </button>
+          </div>
+
+          <div class="flex justify-center">
+            <img src="./images/coxsbazar.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!-- country -->
+      <section class="max-w-screen-xl mx-auto px-4 mt-20">
+        <div>
+          <div class="text-center">
+            <p class="text-2xl font-bold text-[#F411CF] tracking-widest mb-3">
+              COUNTRIES WE COVER
+            </p>
+            <h1 class="text-xl lg:text-4xl font-bold">
+              Explore all countries in Asia
+            </h1>
+          </div>
+          <!-- country card -->
+          <div
+            class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-8"
+          >
+            <div class="px-4 py-4 w-fit lg:px-8 lg:py-8 rounded-lg border">
+              <h1 class="text-2xl lg:text-3xl font-bold">INDIA</h1>
+            </div>
+
+            <div class="px-4 py-4 w-fit lg:px-8 lg:py-8 rounded-lg border">
+              <h1 class="text-2xl lg:text-3xl font-bold">BANGLADESH</h1>
+            </div>
+
+            <div class="px-4 py-4 w-fit lg:px-8 lg:py-8 rounded-lg border">
+              <h1 class="text-2xl lg:text-3xl font-bold">MALDIP</h1>
+            </div>
+
+            <div class="px-4 py-4 w-fit lg:px-8 lg:py-8 rounded-lg border">
+              <h1 class="text-2xl lg:text-3xl font-bold">BHUTAN</h1>
+            </div>
+
+            <div class="px-4 py-4 w-fit lg:px-8 lg:py-8 rounded-lg border">
+              <h1 class="text-2xl lg:text-3xl font-bold">CHAINA</h1>
+            </div>
+
+            <div class="px-4 py-4 w-fit lg:px-8 lg:py-8 rounded-lg border">
+              <h1 class="text-2xl lg:text-3xl font-bold">BHUTAN</h1>
+            </div>
+
+            <div class="px-4 py-4 w-fit lg:px-8 lg:py-8 rounded-lg border">
+              <h1 class="text-2xl lg:text-3xl font-bold">JAPAN</h1>
+            </div>
+          </div>
+
+          <div class="flex justify-center mt-7">
+            <button
+              class="font-bold text-white bg-[#872BFF] px-6 py-3 rounded-full"
+            >
+              Explore Now
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="max-w-screen-xl mx-auto px-4 mt-20">
+        
+      </section>
+    </main>
+
+    <!-- footer section -->
+    <footer></footer>
+  </body>
+</html>
