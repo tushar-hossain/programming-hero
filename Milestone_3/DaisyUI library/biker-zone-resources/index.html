@@ -64,25 +64,33 @@
                 tabindex="0"
                 class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
               >
-                <li><a>Home</a></li>
-                <li><a>Shop</a></li>
-                <li><a>News</a></li>
-                <li><a>Contact</a></li>
+                <li><a href="./pages/home.html" target="_blank">Home</a></li>
+                <li><a href="./pages/shope.html" target="_blank">Shop</a></li>
+                <li><a href="./pages/news.html" target="_blank">News</a></li>
+                <li>
+                  <a href="./pages/contact.html" target="_blank">Contact</a>
+                </li>
               </ul>
             </div>
-            <a class="text-xl font-bold lg:text-4xl">Bike Dekho</a>
+            <a class="text-xl font-bold lg:text-4xl cursor-pointer" href="#"
+              >Bike Dekho</a
+            >
           </div>
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1 text-base font-medium">
-              <li><a>Home</a></li>
-              <li><a>Shop</a></li>
-              <li><a>News</a></li>
-              <li><a>Contact</a></li>
+              <li><a href="./pages/home.html" target="_blank">Home</a></li>
+              <li><a href="./pages/shope.html" target="_blank">Shop</a></li>
+              <li><a href="./pages/news.html" target="_blank">News</a></li>
+              <li>
+                <a href="./pages/contact.html" target="_blank">Contact</a>
+              </li>
             </ul>
           </div>
           <div class="">
             <a
               class="btn bg-btn_primary text-white lg:text-xl font-bold hover:bg-secondary"
+              href="./pages/login.html"
+              target="_parent"
               >Login</a
             >
           </div>
@@ -245,7 +253,7 @@
     <main class="md:container mx-auto lg:px-24 lg:py-8">
       <section>
         <div class="space-y-5 text-center">
-          <h1 class="text-2xl font-bold lg:text-5xl">
+          <h1 class="mt-8 text-2xl font-bold lg:text-5xl">
             Fetured Bikes In This Year
           </h1>
           <p class="font-semibold text-btn_primary">Best bike collection</p>
@@ -257,13 +265,13 @@
           <div
             class="grid grid-cols-1 gap-4 items-center md:grid-cols-2 lg:grid-cols-3 p-5"
           >
-            <div class="h-56">
+            <div class="lg:h-56">
               <img src="./images/others/feature-bike.png" alt="" />
             </div>
-            <div class="h-56">
+            <div class="lg:h-56">
               <img src="./images/others/extrabike.png" alt="" />
             </div>
-            <div class="h-56">
+            <div class="lg:h-56">
               <img src="./images/others/feature-bike.png" alt="" />
             </div>
           </div>
@@ -277,9 +285,11 @@
             latest News
           </h1>
           <!-- news card -->
-          <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+          <div
+            class="px-4 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3"
+          >
             <!-- card-1 -->
-            <div class="card bg-base-100 shadow-xl">
+            <div class="card bg-base-100 border shadow-sm">
               <figure>
                 <img src="./images/others/latest1.png" alt="bike" />
               </figure>
@@ -299,7 +309,7 @@
               </div>
             </div>
             <!-- card-2 -->
-            <div class="card bg-base-100 shadow-xl">
+            <div class="card bg-base-100 border shadow-sm">
               <figure>
                 <img src="./images/others/latest2.png" alt="bike" />
               </figure>
@@ -319,7 +329,7 @@
               </div>
             </div>
             <!-- card-3 -->
-            <div class="card bg-base-100 shadow-xl">
+            <div class="card bg-base-100 border shadow-sm">
               <figure>
                 <img src="./images/others/latest3.png" alt="bike" />
               </figure>
@@ -353,7 +363,7 @@
           </div>
           <!-- client card-1 -->
           <div
-            class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 text-center"
+            class="px-4 grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 text-center"
           >
             <!-- client card-1 -->
             <div class="space-y-5 p-4 lg:px-9 lg:py-9 border shadow-sm">
@@ -500,9 +510,121 @@
           </div>
         </div>
       </section>
+
+      <!-- questions section -->
+      <section class="mt-24">
+        <div>
+          <h1 class="text-2xl font-semibold lg:text-4xl text-center">
+            Frequently Asked <span class="text-btn_primary">Questions</span>
+          </h1>
+          <div class="hero">
+            <div class="hero-content flex-col lg:gap-8 lg:flex-row">
+              <img src="./images/others/faq.png" />
+              <div class="space-y-5">
+                <!--  -->
+                <div class="collapse collapse-arrow">
+                  <input type="radio" name="my-accordion-2" checked="checked" />
+                  <div class="collapse-title text-xl font-medium">
+                    What are the most important things I should know about
+                    riding a bike?
+                  </div>
+                  <div class="collapse-content">
+                    <p>
+                      Safety First! Always obey the rules of the road. Obey all
+                      traffic signals, signs, and laws. Get in the mindset of
+                      “driving” your bike—not just “riding” your bike. This will
+                      help you be a more focused and legally compliant bike
+                      rider.
+                    </p>
+                  </div>
+                </div>
+                <div class="collapse collapse-arrow">
+                  <input type="radio" name="my-accordion-2" />
+                  <div class="collapse-title text-xl font-medium">
+                    How can I tell if my helmet is old and I need a new one?
+                  </div>
+                  <div class="collapse-content">
+                    <p>
+                      Safety First! Always obey the rules of the road. Obey all
+                      traffic signals, signs, and laws. Get in the mindset of
+                      “driving” your bike—not just “riding” your bike. This will
+                      help you be a more focused and legally compliant bike
+                      rider.
+                    </p>
+                  </div>
+                </div>
+                <div class="collapse collapse-arrow">
+                  <input type="radio" name="my-accordion-2" />
+                  <div class="collapse-title text-xl font-medium">
+                    My bike has been in storage is it safe to ride?
+                  </div>
+                  <div class="collapse-content">
+                    <p>
+                      Safety First! Always obey the rules of the road. Obey all
+                      traffic signals, signs, and laws. Get in the mindset of
+                      “driving” your bike—not just “riding” your bike. This will
+                      help you be a more focused and legally compliant bike
+                      rider.
+                    </p>
+                  </div>
+                </div>
+                <div class="collapse collapse-arrow">
+                  <input type="radio" name="my-accordion-2" />
+                  <div class="collapse-title text-xl font-medium">
+                    What rules should I follow when riding my bike?
+                  </div>
+                  <div class="collapse-content">
+                    <p>
+                      Safety First! Always obey the rules of the road. Obey all
+                      traffic signals, signs, and laws. Get in the mindset of
+                      “driving” your bike—not just “riding” your bike. This will
+                      help you be a more focused and legally compliant bike
+                      rider.
+                    </p>
+                  </div>
+                </div>
+                <!--  -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- footer section -->
-    <footer></footer>
+    <footer class="bg-neutral p-10">
+      <section class="md:container mx-auto lg:px-24 lg:py-8">
+        <div class="lg:flex justify-between">
+          <div class="space-y-6">
+            <div class="flex gap-8">
+              <p class="text-white">Download Now</p>
+              <p class="text-white">License</p>
+            </div>
+
+            <div class="md:flex gap-8">
+              <a class="text-white" href="#">About</a>
+              <a class="text-white" href="#">Features</a>
+              <a class="text-white" href="#">Pricing</a>
+              <a class="text-white" href="#">Careers</a>
+              <a class="text-white" href="#">Help</a>
+              <a class="text-white" href="#">Privacy Policy</a>
+            </div>
+          </div>
+
+          <nav>
+            <h6 class="footer-title font-medium text-[#D9DBE1]">Get the App</h6>
+            <div class="grid grid-flow-row gap-4">
+              <a>
+                <img class="h-9" src="./images/others/ios.png" alt="" />
+              </a>
+              <a>
+                <img class="h-9" src="./images/others/android.png" alt="" />
+              </a>
+            </div>
+          </nav>
+        </div>
+        <p class="text-[#D9DBE1]">© 2020 bike. All rights reserved</p>
+      </section>
+    </footer>
   </body>
 </html>
