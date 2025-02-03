@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eat Healthy</title>
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- custom css -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              primaryColor: "#FBA24F",
+              secondaryColor: "",
+              btnPrimary: "#fb974b",
+              btnSecondary: "#fe4a2e",
+            },
+          },
+        },
+      };
+    </script>
+    <!--  -->
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+      /* .btn-primary {
+      } */
+    </style>
+  </head>
+  <body>
+    <!-- header section -->
+    <header class="w-11/12 mx-auto mb-20">
+      <div class="grid lg:grid-cols-2 justify-center items-center">
+        <!-- text -->
+        <div class="space-y-5">
+          <h1 class="font-bold text-2xl md:text-3xl lg:text-5xl">
+            <span class="text-primaryColor">Skip</span> The Diet, <br />
+            Just Eat Healthy <br />
+            With Food Network
+          </h1>
+          <p>
+            Imagine you don't need a diet because we provide <br />
+            healthy and delicious food for you!
+          </p>
+          <button
+            class="bg-gradient-to-l from-btnSecondary to-btnPrimary p-3 rounded-full px-6 py-4 text-white font-semibold"
+          >
+            Order Food
+          </button>
+        </div>
+
+        <!-- img -->
+        <div
+          class="bg-[url('./images/shapes/Group-8450.png')] bg-no-repeat bg-center bg-contain"
+        >
+          <img
+            class="mb-14 lg:mb-6"
+            src="./images/male/Hero-Image.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </header>
+
+    <!-- main section -->
+    <main>
+      <section class="bg-[url('./images/shapes/7.png')]">
+        <div
+          class="w-11/12 mx-auto mb-20 lg:flex items-center gap-9 justify-between"
+        >
+          <div class="ml-12 mb-5 pt-7">
+            <img
+              class="w-[600px]"
+              src="./images/female/PersonImage.png"
+              alt=""
+            />
+          </div>
+          <div class="space-y-6">
+            <h1 class="font-bold text-2xl lg:text-4xl text-[#707070]">
+              About Me
+            </h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Condimentum diam orci pretium a pharetra, feugiat cursus. Dictumst
+              risus, sem egestas odio cras adipiscing vulputate. Nisi, risus in
+              suscipit non. Non commodo volutpat, pharetra, vel.
+            </p>
+            <button
+              class="bg-gradient-to-l from-btnSecondary to-btnPrimary p-3 rounded-full px-6 py-4 text-white font-semibold"
+            >
+              Contact me
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Recipes -->
+      <section class="w-11/12 mx-auto mb-20">
+        <div class="text-center space-y-5 mb-8">
+          <h1 class="font-bold text-2xl lg:text-4xl text-[#676767]">
+            My recipies
+          </h1>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. <br />
+            Lorem Ipsum has been the industry's standard dummy text ever since
+            the 1500s.
+          </p>
+        </div>
+
+        <!-- Recipes card -->
+        <div class="lg:flex gap-6">
+          <!-- card-1 -->
+          <div class="p-5 py-7 rounded-lg shadow-lg">
+            <img src="./images/food/Project Cover.jpg" alt="" />
+            <h1 class="text-2xl lg:text-3xl font-extrabold">Recipie Title</h1>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and <br />
+              typesetting industry. Lorem Ipsum has been the industry's <br />
+              standard dummy text ever since the 1500s.
+            </p>
+          </div>
+          <!-- card-2 -->
+          <div class="p-5 py-7 mt-5 lg:mt-0 rounded-lg shadow-lg">
+            <img src="./images/food/Project Cover.jpg" alt="" />
+            <h1 class="text-2xl lg:text-3xl font-extrabold">Recipie Title</h1>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and <br />
+              typesetting industry. Lorem Ipsum has been the industry's <br />
+              standard dummy text ever since the 1500s.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- social section -->
+      <section class="bg-[url('./images/shapes/Frame59.jpg')]">
+        <div class="w-11/12 mx-auto mb-20 p-6 shadow-lg rounded-lg">
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-7 text-center p-3">
+            <!-- 1 -->
+            <div class="space-y-5">
+              <h1 class="font-bold text-2xl lg:text-5xl">700k</h1>
+              <p>Youtube Subscribers</p>
+            </div>
+            <!-- 2 -->
+            <div class="space-y-5">
+              <h1 class="font-bold text-2xl lg:text-5xl">2.4m</h1>
+              <p>Instagram Followers</p>
+            </div>
+            <!-- 3 -->
+            <div class="space-y-5">
+              <h1 class="font-bold text-2xl lg:text-5xl">100k</h1>
+              <p>Dribbble Shot Likes</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer section -->
+    <footer class="bg-black p-6">
+      <div class="text-center">
+        <h1 class="text-2xl lg:text-5 font-bold">
+          <span class="text-primaryColor">Eat</span>
+          <span class="text-[#5b5b5b]">Fresh</span>
+        </h1>
+        <p class="text-white mt-5">
+          Eat healthy to live healthy. Live healthy to live happy.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
