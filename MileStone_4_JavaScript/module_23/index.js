@@ -190,8 +190,98 @@ function getShopping(products) {
 }
 
 const totalCost = getShopping(product);
-console.log("Total price: ", totalCost, "tk.");
+// console.log("Total price: ", totalCost, "tk.");
 
 /**
  * Multi-layer discount price calculation
+ *
+ * upto 100: ==> 100
+ * more than 101-200: ==>90
+ * more than 200: ==> 70
  */
+
+function discountedPrice(quantity) {
+  if (quantity <= 100) {
+    return quantity * 100;
+  } else if (quantity <= 200) {
+    return quantity * 90;
+  } else {
+    return quantity * 70;
+  }
+}
+
+const result = discountedPrice(50);
+const result1 = discountedPrice(100);
+const result2 = discountedPrice(150);
+const result3 = discountedPrice(200);
+const result4 = discountedPrice(220);
+
+// console.log("discount price: ", result, result1, result2, result3, result4);
+
+/**
+ * layered discount
+ *
+ * first 100 ==> 100
+ * 101 to 200 ==> 90
+ * above 200 ==> 70
+ */
+
+function layeredDiscountPrice(quantity) {
+  const first100Price = 100;
+  const second100Price = 90;
+  const above200Price = 70;
+
+  if (quantity <= 100) {
+    return first100Price * quantity;
+  } else if (quantity <= 200) {
+    const first100Total = 100 * first100Price;
+    const remainingPrice = quantity - 100;
+    const remainingTotal = remainingPrice * second100Price;
+
+    return first100Total + remainingTotal;
+  } else {
+    const first100Total = 100 * first100Price;
+    const remainingPrice = 100 * second100Price;
+    const remainingAbovePrice = quantity - 200;
+    const remainingTotalPrice = remainingAbovePrice * above200Price;
+
+    return first100Total + remainingPrice + remainingTotalPrice;
+  }
+}
+
+const layerDisc = layeredDiscountPrice(50);
+const layerDisc1 = layeredDiscountPrice(150);
+const layerDisc2 = layeredDiscountPrice(250);
+
+// console.log("Discount Price Total: ", layerDisc, layerDisc1, layerDisc2);
+
+/**
+ *
+ * Handle unexpected function input parameter error
+ *
+ */
+
+function add(num1, num2) {
+  if (typeof num1 !== "number" || typeof num2 !== "number") {
+    return "please provide a number";
+  } else {
+    const result = num1 + num2;
+    return result;
+  }
+}
+
+const sum = add(5, 2);
+// console.log(sum);
+
+// string check
+
+function fullName(first, second) {
+  if (typeof first !== "string" || typeof second !== "string") {
+    return "please provide a string";
+  } else {
+    return first + " " + second;
+  }
+}
+
+const name = fullName("Akmal", "hasan");
+console.log(name);
