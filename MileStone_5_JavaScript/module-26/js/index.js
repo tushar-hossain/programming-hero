@@ -95,6 +95,33 @@
  * Event bubble and Stop propagating
  */
 
+// document.getElementById("body").addEventListener("click", () => {
+//   console.log("body clicked");
+// });
+
+// document.getElementById("section-item").addEventListener("click", (e) => {
+//   e.stopPropagation();
+//   console.log("section item click");
+// });
+
+// document.getElementById("items-2").addEventListener("click", (e) => {
+//   e.stopPropagation();
+//   console.log("list item click");
+// });
+
 /**
  * Event delegate and benefit of Event bubble
  */
+
+const items = document.getElementById("items");
+const btnAddItem = document.getElementById("btn-add-item");
+
+btnAddItem.addEventListener("click", () => {
+  const newItem = document.createElement("li");
+  newItem.innerText = "Brand new item added";
+  items.appendChild(newItem);
+});
+
+items.addEventListener("click", (e) => {
+  e.target.parentNode.removeChild(e.target);
+});

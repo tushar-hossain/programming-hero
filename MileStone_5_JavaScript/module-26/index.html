@@ -4,16 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DOM Event Listener</title>
-    <style>
+    <!-- <style>
       .paragraph {
         border: 2px solid green;
         padding: 10px;
         border-radius: 10px;
         background-color: aquamarine;
       }
-    </style>
+      body {
+        border: 1px solid red;
+        padding: 5px;
+      }
+      section {
+        border: 1px solid green;
+      }
+      ol {
+        border: 1px solid purple;
+        margin: 5px;
+      }
+      li {
+        border: 1px solid blue;
+        margin: 5px;
+      }
+    </style> -->
   </head>
-  <body>
+  <body id="body">
     <!-- <button id="make-red">Make Red</button>
     <button id="make-yellow">Make Yellow</button>
     <button id="make-green">Make Green</button>
@@ -75,7 +90,35 @@
 
     <!-- Event bubble and Stop propagating -->
 
+    <!-- <h1>Explore Event bubble</h1>
+
+    <section id="section-item">
+      <h3>List of things</h3>
+      <ol>
+        <li id="items-1">Lorem ipsum dolor sit amet.</li>
+        <li id="items-2">Lorem ipsum dolor sit amet.</li>
+        <li id="items-3">Lorem ipsum dolor sit amet.</li>
+        <li id="items-4">Lorem ipsum dolor sit amet.</li>
+        <li id="items-5">Lorem ipsum dolor sit amet.</li>
+        <li id="items-6">Lorem ipsum dolor sit amet.</li>
+      </ol>
+    </section> -->
+
     <!-- Event delegate and benefit of Event bubble -->
+
+    <section id="section-item">
+      <h1>Explore the concept of Event Delegated</h1>
+      <ol id="items">
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+      </ol>
+
+      <button id="btn-add-item">Add new item</button>
+    </section>
 
     <script src="./js/index.js"></script>
   </body>
