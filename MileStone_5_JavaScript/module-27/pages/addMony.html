@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payo Mobile Bank</title>
+    <!-- daisyUI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-slate-800">
+    <section class="max-w-md min-h-screen mx-auto bg-gray-100 p-4">
+      <nav>
+        <div class="flex items-center justify-between">
+          <p id="time" class="font-bold"></p>
+          <div class="flex gap-3">
+            <img src="../assets/Cellular Connection.png" alt="" />
+            <img src="../assets/Wifi.png" alt="" />
+            <img src="../assets/Battery.png" alt="" />
+          </div>
+        </div>
+      </nav>
+      <!-- banner -->
+      <section>
+        <div class="flex items-center justify-between mt-4">
+          <div class="flex items-center gap-3">
+            <img src="../assets/logo-2.png" alt="" />
+            <div>
+              <h1 class="font-bold text-2xl">$ <span>45000.00</span></h1>
+              <p class="text-sm text-[#08080880]">Available Balance</p>
+            </div>
+          </div>
+          <div>
+            <button class="btn btn-active">
+              <img src="../assets/Frame.png" alt="" /> Log Out
+            </button>
+          </div>
+        </div>
+        <hr class="border-gray-300 mt-6" />
+      </section>
+
+      <!-- main section -->
+      <main>
+        <div>
+          <h1 class="font-bold text-2xl mt-3">🔥 Welcome to Payooo!</h1>
+          <p class="text-[#08080880] mt-3">
+            Enjoy easy and convenient financial services with us. Cashout charge
+            is low and
+          </p>
+        </div>
+
+        <div class="grid grid-cols-3 gap-4 py-6">
+          <div class="border border-gray-300 rounded-lg py-4 cursor-pointer">
+            <img class="m-auto size-8" src="../assets/Group.png" alt="" />
+            <p class="text-[#080808B3] text-center">Add Money</p>
+          </div>
+
+          <div class="border border-gray-300 rounded-lg py-4 cursor-pointer">
+            <img class="m-auto size-8" src="../assets/send 1.png" alt="" />
+            <p class="text-[#080808B3] text-center">Cashout</p>
+          </div>
+
+          <div class="border border-gray-300 rounded-lg py-4 cursor-pointer">
+            <img class="m-auto size-8" src="../assets/money 1.png" alt="" />
+            <p class="text-[#080808B3] text-center">Transfer Money</p>
+          </div>
+
+          <div class="border border-gray-300 rounded-lg py-4 cursor-pointer">
+            <img class="m-auto size-8" src="../assets/financial 1.png" alt="" />
+            <p class="text-[#080808B3] text-center">Get Bonus</p>
+          </div>
+
+          <div class="border border-gray-300 rounded-lg py-4 cursor-pointer">
+            <img class="m-auto size-8" src="../assets/purse 1.png" alt="" />
+            <p class="text-[#080808B3] text-center">Pay Bill</p>
+          </div>
+
+          <div class="border border-gray-300 rounded-lg py-4 cursor-pointer">
+            <img
+              class="m-auto size-8"
+              src="../assets/transaction 1.png"
+              alt=""
+            />
+            <p class="text-[#080808B3] text-center">Transactions</p>
+          </div>
+        </div>
+
+        <section>
+          <div class="flex justify-between items-center mb-4">
+            <h1 class="font-bold text-xl">Latest Payment</h1>
+            <h1 class="text-[#08080880]">View All</h1>
+          </div>
+
+          <div>
+            <div
+              class="flex gap-4 items-center justify-between border p-3 rounded-lg bg-white"
+            >
+              <div class="flex gap-4 items-center">
+                <div>
+                  <img
+                    class="p-4 rounded-full bg-gray-200"
+                    src="../assets/Group.png"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h1 class="text-base font-bold text-[#080808B3]">
+                    Electricity Bill
+                  </h1>
+                  <p id="time2"></p>
+                </div>
+              </div>
+              <p class="rotate-90 font-bold text-2xl cursor-pointer">...</p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </section>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

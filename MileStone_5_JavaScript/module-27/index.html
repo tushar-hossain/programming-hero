@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payo Mobile Bank</title>
+
+    <!-- daisyUI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-slate-800">
+    <section class="max-w-md min-h-screen mx-auto bg-gray-200">
+      <header>
+        <nav>
+          <div class="flex justify-center items-center relative">
+            <img class="mt-10" src="./assets/Rectangle 1.png" alt="" />
+            <div class="absolute">
+              <img class="-mt-20" src="./assets/logo-1.png" alt="" />
+            </div>
+          </div>
+
+          <section class="-mt-24">
+            <div class="p-3">
+              <div class="w-full shadow-xl rounded-xl">
+                <form class="card-body">
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Mobile Number</span>
+                    </label>
+                    <input
+                      id="mobile-number"
+                      type="text"
+                      placeholder="Enter your number"
+                      class="input input-bordered rounded-full border-none"
+                      required
+                    />
+                    <p id="validation"></p>
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">4 Digit Pin</span>
+                    </label>
+                    <input
+                      id="pin-number"
+                      type="text"
+                      placeholder="Enter 4 digit Pin"
+                      class="input input-bordered rounded-full border-none"
+                      required
+                    />
+                    <p id="valid"></p>
+                  </div>
+                  <div class="form-control mt-6">
+                    <button
+                      id="btn-login"
+                      class="btn btn-primary bg-blue-600 border-none rounded-full"
+                    >
+                      Login
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </section>
+        </nav>
+      </header>
+    </section>
+    <script src="./script/script.js"></script>
+  </body>
+</html>
