@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>English Janala</title>
+    <!-- daisyUI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- font awesome CDN-->
+    <script
+      src="https://kit.fontawesome.com/1e86394c92.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .active {
+        background-color: #422ad5;
+        color: white;
+      }
+    </style>
+    <!--  -->
+  </head>
+  <body>
+    <!-- header section -->
+    <header>
+      <!-- navbar -->
+      <section
+        id="navbar"
+        class="bg-[#c6bdbd1f] border-b-1 border-[#C6BDBD] sticky top-0"
+      >
+        <nav class="w-11/12 mx-auto py-5 flex justify-between items-center">
+          <div>
+            <h1 class="flex gap-3 items-center font-bold">
+              <span class="text-xl">English</span>
+              <span
+                ><img class="" src="./assets/logo.png" alt="brand logo"
+              /></span>
+              <span class="text-xl">জানালা</span>
+            </h1>
+          </div>
+
+          <div class="flex items-center gap-4">
+            <button
+              class="btn bg-white text-[#422AD5] border-[#422AD5] hover:bg-[#422AD5] hover:text-white font-bold text-xl"
+            >
+              <i class="fa-solid fa-circle-question"></i>
+              <a href="#">FAQ</a>
+            </button>
+
+            <button
+              class="btn bg-white text-[#422AD5] border-[#422AD5] hover:bg-[#422AD5] hover:text-white font-bold text-xl"
+            >
+              <i class="fa-solid fa-book-open"></i>
+              <a href="#">Learn</a>
+            </button>
+
+            <button
+              class="btn bg-white text-[#422AD5] border-[#422AD5] hover:bg-[#422AD5] hover:text-white font-bold text-xl"
+            >
+              <i class="fa-solid fa-right-from-bracket"></i>
+              <a href="#">Logout</a>
+            </button>
+          </div>
+        </nav>
+      </section>
+
+      <!-- banner -->
+      <section
+        id="banner"
+        class="w-11/12 mx-auto flex justify-between items-center"
+      >
+        <div>
+          <div>
+            <h1 class="text-4xl font-bold">
+              <span class="text-[#00bcff]">English</span> is Easy!!
+            </h1>
+            <p class="font-medium text-[#18181B] mt-5">
+              আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা
+              <br />
+              আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে
+              <br />
+              যাবে অন্য একটি Level এ
+            </p>
+          </div>
+
+          <div>
+            <form id="btn-getStart" class="flex flex-col gap-4 mt-4">
+              <input
+                id="name"
+                type="text"
+                placeholder="Enter Your Name"
+                class="input input-sm"
+              />
+              <input
+                id="password"
+                type="password"
+                placeholder="Enter Login Code (123456)"
+                class="input input-sm"
+              />
+              <div>
+                <button type="submit" class="btn text-white bg-[#422AD5]">
+                  Get Started
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div>
+          <img
+            class="w-[500px]"
+            src="./assets/hero-student.png"
+            alt="banner hero student image"
+          />
+        </div>
+      </section>
+    </header>
+
+    <!-- main section -->
+    <main>
+      <!-- Vocabulary section  -->
+      <section class="w-11/12 mx-auto mt-20">
+        <h1 class="text-2xl font-bold mb-5 text-center">
+          <span class="text-[#00bcff]">Let's</span> Learn Vocabularies
+        </h1>
+        <div id="spinner" class="flex justify-center items-center">
+          <p class="loading loading-dots loading-lg"></p>
+        </div>
+        <!-- load api lesson button here -->
+        <div
+          id="btn-lesson"
+          class="flex items-center justify-center gap-4"
+        ></div>
+
+        <!-- spin load lesson data -->
+        <div id="spin" class="flex justify-center items-center">
+          <p class="loading loading-dots loading-sm"></p>
+        </div>
+
+        <!-- load api data here -->
+        <div id="btn-error" class="mt-10 bg-[#F8F8F8] py-10 px-4 rounded-lg">
+          <!-- default Lesson Select text -->
+          <div id="lesson-select" class="text-center">
+            <p class="text-[#79716B] mb-4">
+              আপনি এখনো কোন Lesson Select করেন নি
+            </p>
+            <h1 class="text-3xl font-medium">একটি Lesson Select করুন।</h1>
+          </div>
+
+          <!-- lesson category data views -->
+          <div id="display-lesson" class="grid grid-cols-3 gap-4"></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer section -->
+    <footer class="border-t-2 border-[#FFEBEB] mt-20 py-7">
+      <section class="w-11/12 mx-auto">
+        <div>
+          <h1 class="flex gap-2 items-center font-bold">
+            <span class="text-2xl">English</span>
+            <span><img src="./assets/logo.png" alt="footer brand logo" /></span>
+            <span class="text-xl">জানালা</span>
+          </h1>
+        </div>
+
+        <div class="flex justify-between mt-4">
+          <div class="space-y-2">
+            <h3 class="font-bold">ইংরেজি শিখুন সহজে</h3>
+            <p>Providing ED-Tech Applications since 2025</p>
+          </div>
+          <div class="space-y-2">
+            <h2 class="text-xl font-semibold">Follow us</h2>
+            <div class="text-3xl">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-youtube"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <!-- js link -->
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
