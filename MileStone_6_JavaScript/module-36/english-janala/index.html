@@ -17,13 +17,16 @@
       src="https://kit.fontawesome.com/1e86394c92.js"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Sweet Alert CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <style>
       .active {
         background-color: #422ad5;
         color: white;
       }
     </style>
-    <!--  -->
   </head>
   <body>
     <!-- header section -->
@@ -31,7 +34,7 @@
       <!-- navbar -->
       <section
         id="navbar"
-        class="bg-[#c6bdbd1f] border-b-1 border-[#C6BDBD] sticky top-0"
+        class="bg-[#c6bdbd1f] border-b-1 border-[#C6BDBD] top-0 fixed w-full z-10"
       >
         <nav class="w-11/12 mx-auto py-5 flex justify-between items-center">
           <div>
@@ -44,35 +47,43 @@
             </h1>
           </div>
 
-          <div class="flex items-center gap-4">
+          <div class="hidden md:flex items-center gap-4">
             <button
               class="btn bg-white text-[#422AD5] border-[#422AD5] hover:bg-[#422AD5] hover:text-white font-bold text-xl"
+              onclick="scrollView('questions-section')"
             >
               <i class="fa-solid fa-circle-question"></i>
-              <a href="#">FAQ</a>
+              <a>FAQ</a>
             </button>
 
             <button
               class="btn bg-white text-[#422AD5] border-[#422AD5] hover:bg-[#422AD5] hover:text-white font-bold text-xl"
+              onclick="scrollView('vocabulary-section')"
             >
               <i class="fa-solid fa-book-open"></i>
-              <a href="#">Learn</a>
+              <a>Learn</a>
             </button>
 
             <button
+              onclick="logout()"
               class="btn bg-white text-[#422AD5] border-[#422AD5] hover:bg-[#422AD5] hover:text-white font-bold text-xl"
             >
               <i class="fa-solid fa-right-from-bracket"></i>
-              <a href="#">Logout</a>
+              <a>Logout</a>
             </button>
           </div>
+          <button
+            class="btn bg-white text-[#422AD5] border-[#422AD5] hover:bg-[#422AD5] hover:text-white font-bold text-xl md:hidden"
+          >
+            <a href="#"><i class="fa-solid fa-bars"></i></a>
+          </button>
         </nav>
       </section>
 
-      <!-- banner -->
+      <!-- banner section -->
       <section
         id="banner"
-        class="w-11/12 mx-auto flex justify-between items-center"
+        class="w-11/12 mx-auto text-center md:text-left mt-28 md:mt-24 md:flex justify-between items-center"
       >
         <div>
           <div>
@@ -102,7 +113,7 @@
                 placeholder="Enter Login Code (123456)"
                 class="input input-sm"
               />
-              <div>
+              <div class="text-left">
                 <button type="submit" class="btn text-white bg-[#422AD5]">
                   Get Started
                 </button>
@@ -124,17 +135,18 @@
     <!-- main section -->
     <main>
       <!-- Vocabulary section  -->
-      <section class="w-11/12 mx-auto mt-20">
+      <section id="vocabulary-section" class="w-11/12 mx-auto mt-28">
         <h1 class="text-2xl font-bold mb-5 text-center">
           <span class="text-[#00bcff]">Let's</span> Learn Vocabularies
         </h1>
         <div id="spinner" class="flex justify-center items-center">
           <p class="loading loading-dots loading-lg"></p>
         </div>
+
         <!-- load api lesson button here -->
         <div
           id="btn-lesson"
-          class="flex items-center justify-center gap-4"
+          class="flex flex-wrap items-center justify-center gap-4"
         ></div>
 
         <!-- spin load lesson data -->
@@ -153,7 +165,114 @@
           </div>
 
           <!-- lesson category data views -->
-          <div id="display-lesson" class="grid grid-cols-3 gap-4"></div>
+          <div
+            id="display-lesson"
+            class="grid md:grid-cols-2 lg:grid-cols-3 gap-4"
+          ></div>
+        </div>
+      </section>
+
+      <!-- Frequently Asked Questions section -->
+      <section id="questions-section" class="w-11/12 mx-auto mt-20">
+        <h1 class="text-2xl text-center font-bold">
+          <span class="text-[#00bcff]">Frequently</span> Asked Questions
+        </h1>
+
+        <!-- Accordion section -->
+        <div class="flex flex-col gap-4 mt-10">
+          <!-- 1st Accordion -->
+          <div
+            class="collapse collapse-plus bg-[#F8F8F8] border border-base-300"
+          >
+            <input type="radio" name="my-accordion-3" checked="checked" />
+            <div class="collapse-title font-medium">
+              <p>The difference between var, let, and const.</p>
+            </div>
+            <div class="collapse-content text-sm">
+              <p class="text-[#62748E]">
+                var, let, and const are used for declaring variables, but they
+                difference in scope and mutability. var is function-scoped and
+                can be re-declared and updated, while let and const are
+                block-scoped, with let allowing re-assignment and const
+                preventing it.
+              </p>
+            </div>
+          </div>
+
+          <!-- 2nd Accordion -->
+          <div
+            class="collapse collapse-plus bg-[#F8F8F8] border border-base-300"
+          >
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title font-medium">
+              <p>The difference between map(), forEach(), and filter().</p>
+            </div>
+            <div class="collapse-content text-sm">
+              <p class="text-[#62748E]">
+                forEach() will not return anything. forEach() returns undefined.
+                filter() method will return an array of matching elements else
+                will return an empty array if no matching happens. If modify the
+                current array and are expecting a modified one, then should go
+                with map().
+              </p>
+            </div>
+          </div>
+
+          <!-- 3rd Accordion -->
+          <div
+            class="collapse collapse-plus bg-[#F8F8F8] border border-base-300"
+          >
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title font-medium">
+              <p>
+                Explain arrow functions and how they are different from regular
+                functions.
+              </p>
+            </div>
+            <div class="collapse-content text-sm">
+              <p class="text-[#62748E]">
+                Arrow functions, introduced in ES6, offer a concise syntax for
+                writing functions, particularly useful for simple, anonymous
+                functions, while regular functions provide more flexibility and
+                control over this binding and arguments.
+              </p>
+            </div>
+          </div>
+
+          <!-- 4th Accordion -->
+          <div
+            class="collapse collapse-plus bg-[#F8F8F8] border border-base-300"
+          >
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title font-medium">
+              <p>How JavaScript Promises work.</p>
+            </div>
+            <div class="collapse-content text-sm">
+              <p class="text-[#62748E]">
+                A Promise is an object that will produce a single value some
+                time in the future. If the promise is successful, it will
+                produce a resolved value, but if something goes wrong then it
+                will produce a reason why the promise failed.
+              </p>
+            </div>
+          </div>
+
+          <!-- 5th Accordion -->
+          <div
+            class="collapse collapse-plus bg-[#F8F8F8] border border-base-300"
+          >
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title font-medium">
+              <p>How closures work in JavaScript.</p>
+            </div>
+            <div class="collapse-content text-sm">
+              <p class="text-[#62748E]">
+                A closure is the combination of a function bundled together with
+                references to its surrounding state. In other words, a closure
+                gives a function access to its outer scope.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -169,17 +288,23 @@
           </h1>
         </div>
 
-        <div class="flex justify-between mt-4">
+        <div class="flex flex-col mt-5 md:mt-5 md:flex-row justify-between">
           <div class="space-y-2">
             <h3 class="font-bold">ইংরেজি শিখুন সহজে</h3>
             <p>Providing ED-Tech Applications since 2025</p>
           </div>
-          <div class="space-y-2">
+          <div class="space-y-2 mt-5 md:mt-0">
             <h2 class="text-xl font-semibold">Follow us</h2>
             <div class="text-3xl">
-              <i class="fa-brands fa-facebook"></i>
-              <i class="fa-brands fa-youtube"></i>
-              <i class="fa-brands fa-instagram"></i>
+              <a href="https://www.facebook.com/" target="_blank"
+                ><i class="fa-brands fa-facebook cursor-pointer"></i
+              ></a>
+              <a href="https://www.youtube.com/" target="_blank"
+                ><i class="fa-brands fa-youtube cursor-pointer"></i
+              ></a>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><i class="fa-brands fa-instagram cursor-pointer"></i
+              ></a>
             </div>
           </div>
         </div>
@@ -187,6 +312,6 @@
     </footer>
 
     <!-- js link -->
-    <script src="./scripts/index.js"></script>
+    <script src="scripts/index.js"></script>
   </body>
 </html>

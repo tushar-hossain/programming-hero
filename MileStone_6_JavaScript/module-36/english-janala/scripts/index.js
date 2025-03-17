@@ -1,10 +1,17 @@
-// hidden navbar and spinner here
+// hidden navbar, vocabulary, question section and spinner here
 
-// document.getElementById("navbar").style.display = "none";
+document.getElementById("navbar").style.display = "none";
+document.getElementById("vocabulary-section").style.display = "none";
+document.getElementById("questions-section").style.display = "none";
+
 document.getElementById("spin").style.display = "none";
 
-// active button clicked before remove
+// if clicked button then scroll this section smoothly view
+function scrollView(id) {
+  document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+}
 
+// active button clicked before remove
 const activeRemoveClass = () => {
   const activeButton = document.getElementsByClassName("active");
   for (const btn of activeButton) {
@@ -12,6 +19,7 @@ const activeRemoveClass = () => {
   }
 };
 
+// submit form functionality
 const btnGetStart = document.getElementById("btn-getStart");
 btnGetStart.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -20,24 +28,39 @@ btnGetStart.addEventListener("submit", (e) => {
 
   if (name.value === "" && password.value === "") {
     alert("Please Tell use your Name first");
-  }
-
-  if (name.value !== "") {
-    if (password.value === "123456") {
-      console.log("password found");
-      document.getElementById("navbar").style.display = "block";
-      name.value = "";
-      password.value = "";
-    } else {
-      alert("Wrong Password Contact admin to get your Login Code");
-    }
   } else {
-    alert("Please enter your Name first");
+    if (name.value !== "") {
+      if (password.value === "123456") {
+        Swal.fire({
+          title: `${name.value} Login Successful!`,
+          icon: "success",
+          draggable: true,
+        });
+
+        document.getElementById("navbar").style.display = "block";
+        document.getElementById("vocabulary-section").style.display = "block";
+        document.getElementById("questions-section").style.display = "block";
+        document.getElementById("banner").style.display = "none";
+
+        name.value = "";
+        password.value = "";
+      } else {
+        alert("Wrong Password Contact admin to get your Login Code");
+      }
+    } else {
+      alert("Please enter your Name first");
+    }
   }
 });
 
-// Dynamic api call function
+const logout = () => {
+  document.getElementById("banner").style.display = "block";
+  document.getElementById("navbar").style.display = "none";
+  document.getElementById("vocabulary-section").style.display = "none";
+  document.getElementById("questions-section").style.display = "none";
+};
 
+// Dynamic api call function
 const dynamicApiCall = async (url) => {
   const response = await fetch(url);
   const data = await response.json();
@@ -109,19 +132,94 @@ const displayLessonCategory = (data) => {
     div.innerHTML = `
     
      <div class="space-y-4 bg-white p-6 text-center rounded-lg">
-     <div class="space-y-4 border-[#cfccccc2] hover:bg-[#d9f99d11] p-8 border text-center rounded-lg">
+     <div class="space-y-4 border-[#cfccccc2] hover:bg-[#d9f99d11] p-6 border text-center rounded-lg">
         <h1 class="text-2xl font-bold">${lesson.word}</h1>
-        <p class="text-xs font-medium">Meaning /Pronounciation</p>
-        <h1 class="text-2xl font-bold">${lesson.meaning}</h1>
+        <p class="text-xs font-medium">Meaning /Pronunciation</p>
+        <h1 class="font-bold">${
+          lesson.meaning ? lesson.meaning : "অর্থ নেই"
+        } / ${lesson.pronunciation}</h1>
         <div class="flex justify-between mt-10">
-        <i class="fa-solid fa-circle-info p-3 bg-[#1A91FF1A] rounded-lg btn"></i>
-        <i class="fa-solid fa-volume-high p-3 bg-[#1A91FF1A] rounded-lg btn"></i>
+        <i onclick=vocabulariesDetailsButton(${
+          lesson.id
+        }) class="fa-solid fa-circle-info p-3 bg-[#1A91FF1A] rounded-lg btn"></i>
+
+        <i onclick=vocabulariesSpeakButton('${
+          lesson.word
+        }') class="fa-solid fa-volume-high p-3 bg-[#1A91FF1A] rounded-lg btn"></i>
     </div>
     </div> 
+
+
+    <dialog id="modal" class="modal">
+        <div id="btn-modal" class="modal-box">
+
+
+            
+          </div>
+      </dialog>
     `;
     displayLesson.appendChild(div);
     document.getElementById("spin").style.display = "none";
   });
+};
+
+// Vocabularies details button clicked views all data
+const vocabulariesDetailsButton = async (id) => {
+  const data = await dynamicApiCall(
+    `https://openapi.programming-hero.com/api/word/${id}`
+  );
+  displayDetailsButton(data);
+};
+
+// Vocabularies details button clicked the modal is open and view pronunciation and Synonyms
+
+const displayDetailsButton = (data) => {
+  document.getElementById("modal").showModal();
+
+  const btnModal = document.getElementById("btn-modal");
+  btnModal.innerHTML = `
+  <div class="space-y-4 bg-white p-6 rounded-lg">
+  <div class="space-y-4 border-[#cfccccc2] hover:bg-[#d9f99d11] p-8 border text-left rounded-lg">
+    <h1 class="text-2xl font-bold">
+      ${data.word} (<i class="fa-solid fa-microphone-lines"></i> : ${
+    data.pronunciation
+  })
+    </h1>
+    <h1 class="text-2xl font-bold">Meaning</h1>
+    <p class="font-semibold">${
+      data.meaning ? data.meaning : "অর্থ পাওয়া যাইনি"
+    }</p>
+    <h1 class="text-xl font-bold">Example</h1>
+    <p class="font-medium">${data.sentence}</p>
+    <h1 class="text-xl font-bold">সমার্থক শব্দ গুলো</h1>
+
+    <div class="flex flex-wrap mt-2">
+    
+    ${
+      data.synonyms.length < 1
+        ? ""
+        : data.synonyms
+            .map((word) => `<button class="btn mr-2">${word}</button>`)
+            .join(" ")
+    }
+
+    </div>
+  </div>
+</div>
+
+<div class="text-left">
+                <form method="dialog">
+                  <button class="btn bg-[#422AD5] text-white">Complete Learning</button>
+                </form>
+              </div>
+  `;
+};
+
+// vocabularies Speak Button click onclick event
+const vocabulariesSpeakButton = (word) => {
+  const utterance = new SpeechSynthesisUtterance(word);
+  utterance.lang = "en-EN";
+  window.speechSynthesis.speak(utterance);
 };
 
 vocabulariesLessonButton();
