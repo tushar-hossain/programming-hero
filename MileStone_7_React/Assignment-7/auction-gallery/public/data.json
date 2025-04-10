@@ -1,63 +1,63 @@
 [
   {
-    "id": 1,
+    "id": "1",
     "title": "Vintage Leica M3 Camera",
     "description": "Early 1900s Swiss-made pocket watch in working condition.",
-    "currentBidPrice": "$2,850",
+    "currentBidPrice": "2850",
     "timeLeft": "2d 50m",
     "bidsCount": 5,
     "image": "https://i.ibb.co.com/wZ1GLSZX/Bid1-min.png"
   },
   {
-    "id": 2,
+    "id": "2",
     "title": "1965 Gibson SG Standard Electric Guitar",
     "description": "Acrylic on canvas, 24x36 inches, signed by artist.",
-    "currentBidPrice": "$2,000",
+    "currentBidPrice": "2000",
     "timeLeft": "1d 23h",
     "bidsCount": 12,
     "image": "https://i.ibb.co.com/vbcS7JF/Bid2-min.png"
   },
   {
-    "id": 3,
+    "id": "3",
     "title": "Original Apple Macintosh 128K (1984)",
     "description": "Hand-carved wooden armchair from the 1800s.",
-    "currentBidPrice": "$3,050",
+    "currentBidPrice": "3050",
     "timeLeft": "6h 10m",
     "bidsCount": 7,
     "image": "https://i.ibb.co.com/VcdcptY9/Bid3-min.png"
   },
   {
-    "id": 4,
+    "id": "4",
     "title": "Rolex Submariner 16610",
     "description": "First edition superhero comic in good condition.",
-    "currentBidPrice": "$5,150",
+    "currentBidPrice": "5150",
     "timeLeft": "3d 22h",
     "bidsCount": 25,
     "image": "https://i.ibb.co.com/Csn0WjYf/Bid4-min.png"
   },
   {
-    "id": 5,
+    "id": "5",
     "title": "First Edition 'The Great Gatsby' by F. Scott Fitzgerald",
     "description": "Vintage film camera with original leather case.",
-    "currentBidPrice": "$1,150",
+    "currentBidPrice": "1150",
     "timeLeft": "4h 30m",
     "bidsCount": 9,
     "image": "https://i.ibb.co.com/9k0M52fw/Bid6-min.png"
   },
   {
-    "id": 6,
+    "id": "6",
     "title": "Mid-Century Modern Eames Lounge Chair",
     "description": "Modern designer watch, stainless steel with leather strap.",
-    "currentBidPrice": "$800",
+    "currentBidPrice": "800",
     "timeLeft": "1d 5m",
     "bidsCount": 18,
     "image": "https://i.ibb.co.com/LXzrB10g/Bid5-min.png"
   },
   {
-    "id": 7,
+    "id": "7",
     "title": "Banksy Original Screen Print",
     "description": "Official match ball signed by top league players.",
-    "currentBidPrice": "$2,000",
+    "currentBidPrice": "2000",
     "timeLeft": "2d 8h",
     "bidsCount": 14,
     "image": "https://i.ibb.co.com/bMkmRgcY/Bid7-min.png"

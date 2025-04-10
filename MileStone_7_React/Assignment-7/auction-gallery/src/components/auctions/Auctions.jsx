@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from "react";
-import Aution from "../aution/Aution";
+import Auction from "../auction/Auction";
 import Favorite from "../favorite_item/Favorite";
 
-const Autions = () => {
-  const [autions, setAutions] = useState([]);
+const Auctions = ({ handleItem, item, handleRemove, amount }) => {
+  const [auctions, setAuctions] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(false);
 
   useEffect(() => {
     setIsLoading(true);
-    fetch("../../../public/data.json")
+    fetch("data.json")
       .then((res) => res.json())
       .then((data) => {
-        setAutions(data);
+        setAuctions(data);
         setIsLoading(false);
       })
       .catch(() => {
@@ -37,10 +37,10 @@ const Autions = () => {
 
         <div className="lg:flex gap-4">
           <div className="bg-white p-4 rounded-lg mt-8 w-full">
-            <Aution autions={autions} />
+            <Auction auctions={auctions} handleItem={handleItem} />
           </div>
-          <div className="bg-white p-4 rounded-lg mt-8 lg:w-[40%]">
-            <Favorite />
+          <div className="bg-white p-4 rounded-lg mt-8 lg:w-[40%] h-max">
+            <Favorite item={item} handleRemove={handleRemove} amount={amount} />
           </div>
         </div>
       </div>
@@ -48,4 +48,4 @@ const Autions = () => {
   );
 };
 
-export default Autions;
+export default Auctions;

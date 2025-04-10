@@ -1,6 +1,6 @@
 import React from "react";
 
-const Navbar = () => {
+const Navbar = ({ item }) => {
   return (
     <div className="bg-base-100 shadow-sm">
       <div className="flex items-center justify-between w-11/12 mx-auto py-3">
@@ -50,23 +50,15 @@ const Navbar = () => {
                     d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
                   />
                 </svg>
-                <span className="badge-sm indicator-item text-xl">0</span>
+                <span className="badge-sm indicator-item text-xl">
+                  {item.length}
+                </span>
               </div>
             </div>
             <div
               tabIndex={0}
               className="card card-compact dropdown-content bg-base-100 z-1 mt-3 w-52 shadow"
-            >
-              <div className="card-body">
-                <span className="text-lg font-bold">8 Items</span>
-                <span className="text-info">Subtotal: $999</span>
-                <div className="card-actions">
-                  <button className="btn btn-primary btn-block">
-                    View cart
-                  </button>
-                </div>
-              </div>
-            </div>
+            ></div>
           </div>
 
           <div className="dropdown dropdown-end">
@@ -82,23 +74,6 @@ const Navbar = () => {
                 />
               </div>
             </div>
-            {/* <ul
-              tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
-            >
-              <li>
-                <a className="justify-between">
-                  Profile
-                  <span className="badge">New</span>
-                </a>
-              </li>
-              <li>
-                <a>Settings</a>
-              </li>
-              <li>
-                <a>Logout</a>
-              </li>
-            </ul> */}
           </div>
         </div>
       </div>
