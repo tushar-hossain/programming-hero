@@ -6,11 +6,20 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
+assets
+public
+.gitignore
+eslint.config.js
+package-lock.json
+package.json
+README.md
+vite.config.js
 
 node_modules
 dist
 dist-ssr
 *.local
+
 
 # Editor directories and files
 .vscode/*
