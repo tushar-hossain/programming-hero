@@ -1,0 +1,10 @@
+[
+  { "id": 1, "bill_type": "electricity" },
+  { "id": 2, "bill_type": "gas" },
+  { "id": 3, "bill_type": "internet" },
+  { "id": 4, "bill_type": "water" },
+  { "id": 5, "bill_type": "credit card bill" },
+  { "id": 6, "bill_type": "tuition" },
+  { "id": 7, "bill_type": "college fee" },
+  { "id": 8, "bill_type": "school fee" }
+]

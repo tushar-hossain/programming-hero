@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "bill_type": "electricity",
+    "icon": "https://i.ibb.co.com/MxbvPKNQ/desco-logo.png",
+    "organization": "DESCO",
+    "amount": 1890,
+    "due-date": "2025-03-22T06:57:58.110Z",
+    "description": "Monthly electricity consumption charges for residential usage under DESCO distribution.",
+    "bill_icon": "https://i.ibb.co.com/k0nXFmM/869833.png"
+  },
+  {
+    "id": 2,
+    "bill_type": "gas",
+    "icon": "https://i.ibb.co.com/4wnWq0mn/titash-gas-logo.png",
+    "organization": "Titas Gas",
+    "amount": 1488,
+    "due-date": "2025-03-28T06:57:58.110Z",
+    "description": "Domestic pipeline gas bill provided by Titas Gas Transmission and Distribution Company.",
+    "bill_icon": "https://i.ibb.co.com/4wwb6dJ0/images-1-removebg-preview.png"
+  },
+  {
+    "id": 3,
+    "bill_type": "internet",
+    "icon": "https://i.ibb.co.com/q3Vbnd1k/images-2.jpg",
+    "organization": "BDCom",
+    "amount": 1200,
+    "due-date": "2025-04-01T06:57:58.110Z",
+    "description": "High-speed fiber-optic internet service monthly charge by BDCom ISP.",
+    "bill_icon": "https://i.ibb.co.com/WWFFRY9Y/png-clipart-internet-logo-removebg-preview.png"
+  },
+  {
+    "id": 4,
+    "bill_type": "water",
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRokBtHdbx-DYCVQCwg8y0aN_CujtHA2pTv4Q&s",
+    "organization": "WASA",
+    "amount": 860,
+    "due-date": "2025-04-05T06:57:58.110Z",
+    "description": "Monthly household water supply bill provided by WASA authority.",
+    "bill_icon": "https://i.ibb.co.com/mVky34Rh/png-transparent-water-removebg-preview.png"
+  },
+  {
+    "id": 5,
+    "bill_type": "credit card bill",
+    "icon": "https://i.ibb.co.com/YB89dFzX/images.png",
+    "organization": "BRAC Bank",
+    "amount": 3600,
+    "due-date": "2025-04-07T06:57:58.110Z",
+    "description": "Monthly due on your BRAC Bank Visa credit card for various purchases.",
+    "bill_icon": "https://i.ibb.co.com/DHtdzbC7/png-transparent-computer-icons-credit-removebg-preview.png"
+  },
+  {
+    "id": 6,
+    "bill_type": "tuition",
+    "icon": "https://i.ibb.co.com/2mr7fwC/green-leaf-logo.png",
+    "organization": "Green Leaf School",
+    "amount": 2500,
+    "due-date": "2025-04-10T06:57:58.110Z",
+    "description": "Monthly academic tuition fee for your child enrolled at Green Leaf School.",
+    "bill_icon": "https://i.ibb.co.com/rftL7q50/pngtree-summer-tuition-png-image-5916385-removebg-preview.png"
+  },
+  {
+    "id": 7,
+    "bill_type": "college fee",
+    "icon": "https://i.ibb.co.com/cXrCRMHW/dhaka-city-college-logo-png-seeklogo-484150.png",
+    "organization": "City College",
+    "amount": 5000,
+    "due-date": "2025-04-15T06:57:58.110Z",
+    "description": "Semester fee installment for the ongoing academic year at City College.",
+    "bill_icon": "https://i.ibb.co.com/bgqrC41n/11905744.png"
+  },
+  {
+    "id": 8,
+    "bill_type": "school fee",
+    "icon": "https://i.ibb.co.com/fVnhy6vZ/unnamed.png",
+    "organization": "Sunrise High School",
+    "amount": 2200,
+    "due-date": "2025-04-18T06:57:58.110Z",
+    "description": "Monthly school tuition and development fee for Sunrise High School students.",
+    "bill_icon": "https://i.ibb.co.com/kg3RRgZJ/8074788.png"
+  },
+  {
+    "id": 9,
+    "bill_type": "electricity",
+    "icon": "https://images.seeklogo.com/logo-png/38/1/nesco-logo-png_seeklogo-382775.png",
+    "organization": "NESCO",
+    "amount": 2050,
+    "due-date": "2025-04-20T06:57:58.110Z",
+    "description": "NESCO electricity charges for power usage in the northwestern region residence.",
+    "bill_icon": "https://i.ibb.co.com/k0nXFmM/869833.png"
+  },
+  {
+    "id": 10,
+    "bill_type": "internet",
+    "icon": "https://i.ibb.co.com/WvYCHJNn/Link3.png",
+    "organization": "Link3",
+    "amount": 1350,
+    "due-date": "2025-04-25T06:57:58.110Z",
+    "description": "Monthly broadband internet package bill by Link3 Technologies.",
+    "bill_icon": "https://i.ibb.co.com/WWFFRY9Y/png-clipart-internet-logo-removebg-preview.png"
+  },
+  {
+    "id": 11,
+    "bill_type": "gas",
+    "icon": "https://i.ibb.co.com/p67MQ7X1/bakhrabad-gas.png",
+    "organization": "Bakhrabad Gas",
+    "amount": 990,
+    "due-date": "2025-04-28T06:57:58.110Z",
+    "description": "Residential gas supply bill by Bakhrabad Gas Distribution Company.",
+    "bill_icon": "https://i.ibb.co.com/4wwb6dJ0/images-1-removebg-preview.png"
+  },
+  {
+    "id": 12,
+    "bill_type": "water",
+    "icon": "https://i.ibb.co.com/0VBJB1v3/Chattogram-WASA-logo-2.png",
+    "organization": "Chattogram WASA",
+    "amount": 780,
+    "due-date": "2025-05-01T06:57:58.110Z",
+    "description": "Water service charges issued by Chattogram Water Supply Authority.",
+    "bill_icon": "https://i.ibb.co.com/mVky34Rh/png-transparent-water-removebg-preview.png"
+  },
+  {
+    "id": 13,
+    "bill_type": "credit card bill",
+    "icon": "https://i.ibb.co.com/bgWfnsDX/images-3.jpg",
+    "organization": "DBBL",
+    "amount": 4100,
+    "due-date": "2025-05-05T06:57:58.110Z",
+    "description": "Credit card repayment for purchases made using your DBBL MasterCard.",
+    "bill_icon": "https://i.ibb.co.com/DHtdzbC7/png-transparent-computer-icons-credit-removebg-preview.png"
+  },
+  {
+    "id": 14,
+    "bill_type": "tuition",
+    "icon": "https://i.ibb.co.com/7xvsMHjQ/scholars-academy-kotdwara-logo.png",
+    "organization": "Scholars Academy",
+    "amount": 2750,
+    "due-date": "2025-05-08T06:57:58.110Z",
+    "description": "Education fee for ongoing academic session at Scholars Academy.",
+    "bill_icon": "https://i.ibb.co.com/rftL7q50/pngtree-summer-tuition-png-image-5916385-removebg-preview.png"
+  },
+  {
+    "id": 15,
+    "bill_type": "college fee",
+    "icon": "https://i.ibb.co.com/HDNBxXh6/national-college-of-home-economics-logo-png-seeklogo-611807.png",
+    "organization": "National College",
+    "amount": 5200,
+    "due-date": "2025-05-12T06:57:58.110Z",
+    "description": "College admission and monthly fees for students enrolled at National College.",
+    "bill_icon": "https://i.ibb.co.com/bgqrC41n/11905744.png"
+  },
+  {
+    "id": 16,
+    "bill_type": "school fee",
+    "icon": "https://i.ibb.co.com/S7rpyHxR/images-4.jpg",
+    "organization": "Starlight School",
+    "amount": 2300,
+    "due-date": "2025-05-15T06:57:58.110Z",
+    "description": "Starlight School monthly tuition, exam, and facility usage charges.",
+    "bill_icon": "https://i.ibb.co.com/kg3RRgZJ/8074788.png"
+  },
+  {
+    "id": 17,
+    "bill_type": "electricity",
+    "icon": "https://i.ibb.co.com/Wv0hdyXL/1683972212.jpg",
+    "organization": "PDB",
+    "amount": 1800,
+    "due-date": "2025-05-18T06:57:58.110Z",
+    "description": "Monthly electricity charges for PDB-managed areas and supply lines.",
+    "bill_icon": "https://i.ibb.co.com/k0nXFmM/869833.png"
+  },
+  {
+    "id": 18,
+    "bill_type": "internet",
+    "icon": "https://i.ibb.co.com/dJwjpDxD/images-5.jpg",
+    "organization": "Amber IT",
+    "amount": 1100,
+    "due-date": "2025-05-20T06:57:58.110Z",
+    "description": "Amber IT's unlimited internet package for home and small office users.",
+    "bill_icon": "https://i.ibb.co.com/WWFFRY9Y/png-clipart-internet-logo-removebg-preview.png"
+  },
+  {
+    "id": 19,
+    "bill_type": "gas",
+    "icon": "https://i.ibb.co.com/KzFNgc5W/images-6.jpg",
+    "organization": "Jalalabad Gas",
+    "amount": 1450,
+    "due-date": "2025-05-22T06:57:58.110Z",
+    "description": "Monthly natural gas usage billing provided by Jalalabad Gas T&D System Ltd.",
+    "bill_icon": "https://i.ibb.co.com/4wwb6dJ0/images-1-removebg-preview.png"
+  },
+  {
+    "id": 20,
+    "bill_type": "credit card bill",
+    "icon": "https://i.ibb.co.com/1JjqmGNp/png-transparent-standard-chartered.png",
+    "organization": "Standard Chartered",
+    "amount": 3900,
+    "due-date": "2025-05-25T06:57:58.110Z",
+    "description": "Credit card balance due for online and retail purchases through Standard Chartered.",
+    "bill_icon": "https://i.ibb.co.com/DHtdzbC7/png-transparent-computer-icons-credit-removebg-preview.png"
+  }
+]

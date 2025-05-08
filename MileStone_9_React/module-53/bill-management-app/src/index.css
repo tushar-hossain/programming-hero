@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: light --default;
+}
+
+a.active {
+  background-color: tomato;
+  color: white;
+  font-weight: 600;
+  margin: 0 5px;
+}
+body {
+  background-color: #dbdbdbc5;
+}
