@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "placeName": "Cox's Bazar",
+    "description": "Cox's Bazar boasts the world's longest natural sea beach and is a popular tourist destination for sunbathing, surfing, and seafood.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1d_6uBhc5vM9FrStleCHq3D1_jW6E7bFpP-1lM9VsH_CzzSQy5rMBZsMYJYSf6FFQ-88&usqp=CAU",
+    "ratePerNight": 3500,
+    "rating": 4.7,
+    "location": "Chattogram Division",
+    "popularActivities": ["Beach Walk", "Surfing", "Sunset Views"],
+    "bestTimeToVisit": "November to March",
+    "availableHotels": ["Ocean Paradise", "Long Beach Hotel", "Sayeman Resort"]
+  },
+  {
+    "id": 2,
+    "placeName": "Sundarbans",
+    "description": "The Sundarbans is a UNESCO World Heritage Site and home to the Royal Bengal Tiger and diverse flora and fauna.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Sundarban_Tiger.jpg/1200px-Sundarban_Tiger.jpg",
+    "ratePerNight": 2500,
+    "rating": 4.6,
+    "location": "Khulna Division",
+    "popularActivities": [
+      "Boat Safari",
+      "Mangrove Exploration",
+      "Wildlife Watching"
+    ],
+    "bestTimeToVisit": "October to March",
+    "availableHotels": [
+      "Sundarban Eco Resort",
+      "Tiger Garden",
+      "Parjatan Motel"
+    ]
+  },
+  {
+    "id": 3,
+    "placeName": "Saint Martin's Island",
+    "description": "Known for coral reefs and turquoise waters, Saint Martin's is the only coral island in Bangladesh.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYb3JxMYSIop5qDVPR9hd5h_AgrWcwiVAxCA&s",
+    "ratePerNight": 3000,
+    "rating": 4.5,
+    "location": "Bay of Bengal",
+    "popularActivities": ["Snorkeling", "Boating", "Seafood"],
+    "bestTimeToVisit": "November to February",
+    "availableHotels": ["Blue Marine Resort", "Coral View", "Dream Night Hotel"]
+  },
+  {
+    "id": 4,
+    "placeName": "Rangamati",
+    "description": "Rangamati offers scenic beauty with its hills, lake, and tribal culture, perfect for peaceful retreats.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFrh1TagIhjBVAi-GrtHj4yLW92kRkbxNQwQ&s",
+    "ratePerNight": 2200,
+    "rating": 4.4,
+    "location": "Chattogram Hill Tracts",
+    "popularActivities": ["Boat Riding", "Tribal Market Visit", "Hiking"],
+    "bestTimeToVisit": "September to February",
+    "availableHotels": ["Parjatan Holiday Complex", "Lake View Resort"]
+  },
+  {
+    "id": 5,
+    "placeName": "Bandarban",
+    "description": "Famous for its hills and tribal culture, Bandarban is perfect for adventure seekers and nature lovers.",
+    "image": "https://www.tbsnews.net/sites/default/files/styles/amp_metadata_content_image_min_696px_wide/public/images/2020/11/25/pic_01.jpg",
+    "ratePerNight": 2400,
+    "rating": 4.6,
+    "location": "Chattogram Hill Tracts",
+    "popularActivities": ["Hiking", "Waterfalls", "Cultural Tours"],
+    "bestTimeToVisit": "November to March",
+    "availableHotels": [
+      "Hill View Hotel",
+      "Milano Resort",
+      "Holiday Inn Bandarban"
+    ]
+  },
+  {
+    "id": 6,
+    "placeName": "Srimangal",
+    "description": "Srimangal is known as the tea capital of Bangladesh and offers a tranquil experience amidst tea gardens.",
+    "image": "https://www.tripsilo.com/uploads/images/tours/slider/665708_syletteagarden.x65070.jpg",
+    "ratePerNight": 1800,
+    "rating": 4.3,
+    "location": "Sylhet Division",
+    "popularActivities": [
+      "Tea Garden Tour",
+      "Bird Watching",
+      "Lawachara Forest Visit"
+    ],
+    "bestTimeToVisit": "October to February",
+    "availableHotels": ["Tea Resort", "Grand Sultan", "Sremangal Inn"]
+  },
+  {
+    "id": 7,
+    "placeName": "Sylhet",
+    "description": "A city of natural beauty with hills, tea gardens, and sacred shrines, Sylhet is a spiritual and scenic escape.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtdUhaC5rpDkzKbopf5UF90ccKowzRiYxE8A&s",
+    "ratePerNight": 2600,
+    "rating": 4.5,
+    "location": "Sylhet Division",
+    "popularActivities": [
+      "Tea Garden Tours",
+      "Shrine Visits",
+      "River Cruising"
+    ],
+    "bestTimeToVisit": "November to March",
+    "availableHotels": [
+      "Hotel Noorjahan",
+      "Nazimgarh Resort",
+      "Britannia Hotel"
+    ]
+  },
+  {
+    "id": 8,
+    "placeName": "Kuakata",
+    "description": "Kuakata offers rare views of both sunrise and sunset over the sea from the same beach.",
+    "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/a9/8b/44/sea-beach.jpg?w=1200&h=1200&s=1",
+    "ratePerNight": 2000,
+    "rating": 4.2,
+    "location": "Patuakhali, Barisal Division",
+    "popularActivities": ["Beach Walks", "Photography", "Coconut Drinking"],
+    "bestTimeToVisit": "October to February",
+    "availableHotels": ["Kuakata Inn", "Hotel Graver Inn", "Beach Crown"]
+  },
+  {
+    "id": 9,
+    "placeName": "Paharpur",
+    "description": "Home to the ancient ruins of the Buddhist Vihara, Paharpur is a historical site of immense cultural value.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM0sbQloRnklFuf7BhxBKj65E69OPbLfQZOw&s",
+    "ratePerNight": 1500,
+    "rating": 4.1,
+    "location": "Naogaon District",
+    "popularActivities": ["Historical Tours", "Photography"],
+    "bestTimeToVisit": "November to March",
+    "availableHotels": ["Paharpur Guest House", "Parjatan Motel"]
+  },
+  {
+    "id": 10,
+    "placeName": "Mahasthangarh",
+    "description": "One of the earliest urban archaeological sites in Bangladesh, dating back to 3rd century BCE.",
+    "image": "https://farm8.staticflickr.com/7620/27715467586_81cf9c0141_b.jpg",
+    "ratePerNight": 1600,
+    "rating": 4.0,
+    "location": "Bogra District",
+    "popularActivities": ["Museum Visits", "Archaeological Exploration"],
+    "bestTimeToVisit": "December to February",
+    "availableHotels": ["Hotel Naz Garden", "Hotel Siesta", "Parjatan Motel"]
+  }
+]

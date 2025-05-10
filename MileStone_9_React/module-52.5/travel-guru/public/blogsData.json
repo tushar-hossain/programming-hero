@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "title": "Top 7 Hidden Gems in Bangladesh You Must Visit",
+    "author": "Ayesha Rahman",
+    "date": "2025-04-22",
+    "excerpt": "Discover some of the least-known but stunningly beautiful travel destinations across Bangladesh.",
+    "content": "From the quiet beauty of Nafakhum Waterfall to the mystical charm of Lalakhal, these hidden gems offer unforgettable experiences.",
+    "tags": ["Bangladesh", "Nature", "Hidden Spots"],
+    "coverImage": "https://tbbd-flight.s3.ap-southeast-1.amazonaws.com/blogC271PhTlRXvHUt9WcvtXXVaRY_F33pEB.png",
+    "readTime": "5 min"
+  },
+  {
+    "id": 2,
+    "title": "Why Cox’s Bazar is More Than Just a Beach",
+    "author": "Tanvir Islam",
+    "date": "2025-03-15",
+    "excerpt": "Explore beyond the beach: the food, culture, and adventure that makes Cox’s Bazar a complete package.",
+    "content": "While most travelers go to Cox’s Bazar for the beach, the area also offers rich cuisine, Buddhist temples, and lively markets.",
+    "tags": ["Cox's Bazar", "Culture", "Travel Tips"],
+    "coverImage": "https://tbbd-flight.s3.ap-southeast-1.amazonaws.com/blogC271PhTlRXvHUt9WcvtXXVaRY_F33pEB.png",
+    "readTime": "4 min"
+  },
+  {
+    "id": 3,
+    "title": "A Beginner’s Guide to Trekking in Bandarban",
+    "author": "Nadia Chowdhury",
+    "date": "2025-02-27",
+    "excerpt": "Thinking of trekking in Bandarban? Here's what you need to know before hitting the trail.",
+    "content": "Bandarban offers several beginner-friendly trails like Nilgiri, Nafakhum, and Boga Lake that are ideal for your first trek.",
+    "tags": ["Bandarban", "Trekking", "Adventure"],
+    "coverImage": "https://tbbd-flight.s3.ap-southeast-1.amazonaws.com/blogC271PhTlRXvHUt9WcvtXXVaRY_F33pEB.png",
+    "readTime": "6 min"
+  },
+  {
+    "id": 4,
+    "title": "The Ultimate Packing Checklist for a Trip to the Sundarbans",
+    "author": "Farhan Uddin",
+    "date": "2025-04-01",
+    "excerpt": "Ensure a safe and comfortable Sundarbans trip with this expert-approved packing checklist.",
+    "content": "From mosquito repellent to waterproof bags, here’s everything you’ll need to explore the mangroves stress-free.",
+    "tags": ["Sundarbans", "Packing", "Travel Essentials"],
+    "coverImage": "https://tbbd-flight.s3.ap-southeast-1.amazonaws.com/blogC271PhTlRXvHUt9WcvtXXVaRY_F33pEB.png",
+    "readTime": "3 min"
+  },
+  {
+    "id": 5,
+    "title": "Best Times to Visit Popular Bangladeshi Tourist Spots",
+    "author": "Raisa Kabir",
+    "date": "2025-01-19",
+    "excerpt": "Timing is everything—here's when to visit Cox's Bazar, Sylhet, and Kuakata for the best experience.",
+    "content": "Avoid the rainy season and make the most of your travels by planning around festivals, climate, and crowd levels.",
+    "tags": ["Seasons", "Bangladesh", "Planning"],
+    "coverImage": "https://tbbd-flight.s3.ap-southeast-1.amazonaws.com/blogC271PhTlRXvHUt9WcvtXXVaRY_F33pEB.png",
+    "readTime": "5 min"
+  }
+]
