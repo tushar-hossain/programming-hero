@@ -8,7 +8,6 @@ const Login = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-
   const handelLogin = (e) => {
     e.preventDefault();
 
@@ -23,7 +22,7 @@ const Login = () => {
           lastSignInTime: result.user?.metadata?.lastSignInTime,
         };
         // update user login time
-        fetch("http://localhost:3000/users", {
+        fetch("https://coffee-store-server-nine-gules.vercel.app/users", {
           method: "PATCH",
           headers: {
             "Content-type": "application/json",

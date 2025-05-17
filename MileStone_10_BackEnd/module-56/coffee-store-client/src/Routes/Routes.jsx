@@ -22,7 +22,8 @@ export const router = createBrowserRouter([
         index: true,
         Component: Home,
         hydrateFallbackElement: <Loading />,
-        loader: () => fetch("http://localhost:3000/coffees"),
+        loader: () =>
+          fetch("https://coffee-store-server-nine-gules.vercel.app/coffees"),
       },
       {
         path: "add-coffee",
@@ -36,14 +37,18 @@ export const router = createBrowserRouter([
         path: "coffee-details/:id",
         hydrateFallbackElement: <Loading />,
         loader: ({ params }) =>
-          fetch(`http://localhost:3000/coffees/${params.id}`),
+          fetch(
+            `https://coffee-store-server-nine-gules.vercel.app/coffees/${params.id}`
+          ),
         Component: CoffeeDetails,
       },
       {
         path: "coffee-update/:id",
         hydrateFallbackElement: <Loading />,
         loader: ({ params }) =>
-          fetch(`http://localhost:3000/coffees/${params.id}`),
+          fetch(
+            `https://coffee-store-server-nine-gules.vercel.app/coffees/${params.id}`
+          ),
         element: (
           <PrivateRoute>
             <UpdateCoffee />

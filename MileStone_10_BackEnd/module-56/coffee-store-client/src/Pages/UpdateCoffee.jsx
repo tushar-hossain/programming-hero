@@ -23,13 +23,16 @@ const UpdateCoffee = () => {
       /* Read more about isConfirmed, isDenied below */
       if (result.isConfirmed) {
         //   update coffees data server
-        fetch(`http://localhost:3000/coffees/${id}`, {
-          method: "PUT",
-          headers: {
-            "Content-type": "application/json",
-          },
-          body: JSON.stringify(coffeeData),
-        })
+        fetch(
+          `https://coffee-store-server-nine-gules.vercel.app/coffees/${id}`,
+          {
+            method: "PUT",
+            headers: {
+              "Content-type": "application/json",
+            },
+            body: JSON.stringify(coffeeData),
+          }
+        )
           .then((res) => res.json())
           .then((data) => {
             if (data.modifiedCount) {

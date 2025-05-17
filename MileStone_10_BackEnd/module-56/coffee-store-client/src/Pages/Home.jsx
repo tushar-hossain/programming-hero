@@ -27,9 +27,12 @@ const Home = () => {
       denyButtonText: `Don't delete`,
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:3000/coffees/${id}`, {
-          method: "DELETE",
-        })
+        fetch(
+          `https://coffee-store-server-nine-gules.vercel.app/coffees/${id}`,
+          {
+            method: "DELETE",
+          }
+        )
           .then((res) => res.json())
           .then((data) => {
             if (data.deletedCount) {

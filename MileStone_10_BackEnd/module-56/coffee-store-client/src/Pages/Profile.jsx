@@ -9,7 +9,9 @@ const Profile = () => {
   const [user, setUser] = useState({});
 
   useEffect(() => {
-    fetch(`http://localhost:3000/users/${users.email}`)
+    fetch(
+      `https://coffee-store-server-nine-gules.vercel.app/users/${users.email}`
+    )
       .then((res) => res.json())
       .then((data) => setUser(data));
   }, [users.email]);
