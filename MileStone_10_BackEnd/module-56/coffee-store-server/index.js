@@ -114,5 +114,5 @@ async function run() {
 run().catch(console.dir);
 
 app.listen(port, () => {
-  console.log(`Coffee server running at http://localhost:${port}`);
+  console.log(`Coffee server running at ${port}`);
 });
